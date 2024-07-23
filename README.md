@@ -180,6 +180,28 @@ export default function RootLayout({ children }) {
 - space-y-3: margin-top: 0.75rem; /* 12px */
 - list-disc: list-style-type: disc; (Xem chi tiết: https://tailwindcss.com/docs/list-style-type)
 
+### Giải thích về aspect
+
+```jsx
+<div className="w-full aspect-w-16 aspect-h-8 lg:h-80">
+    <img 
+        src={recipe.image}
+        alt={recipe.name}
+        className="w-full h-full object-cover object-top"
+    />
+</div>
+```
+
+- Cách sử dụng aspect-ratio
+- B1: npm install @tailwindcss/aspect-ratio
+- B2: Thêm ở tailwind.config.js
+```js
+plugins: [
+  require("tailwindcss-animate"),
+  require("tailwindcss/aspect-ratio")
+],
+```
+
 
 
 

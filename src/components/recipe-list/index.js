@@ -21,7 +21,7 @@ export default function RecipeList({ recipeList }){
                             recipeList.map((recipe) => <Link key={recipe.id} href={`/recipe-list/${recipe.id}`}>
                                 <Card>
                                     <CardContent className="bg-white rounded-md overflow-hidden shadow-md cursor-pointer hover:scale-[1.1] transiaiton-all">
-                                        <div className="w-full aspect-w-16 aspect-h-8 lg:h-80">
+                                        <div className="w-full aspect-w-16 aspect-h-9 lg:h-80">
                                             <img 
                                                 src={recipe.image}
                                                 alt={recipe.name}
